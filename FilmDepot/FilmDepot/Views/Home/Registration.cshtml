@@ -1,0 +1,31 @@
+﻿@model FilmDepot.Models.RegisterViewModel
+
+<form  asp-controller = "Home" asp-action = "register">
+<label asp-for= "Title"></label>
+<input maxlength= 50 asp-for = "Title" />
+
+
+<label asp-for ="Genre"> Action</label>
+<input type="radio" value = "Action" />
+
+<label asp-for ="Genre"> Horror</label>
+<input type="radio" value = "Horror" />
+
+<label asp-for ="Genre"> Drama</label>
+<input type="radio" value = "Drama" />
+
+<label asp-for ="Genre"> Comedy</label>
+<input type="radio" value = "Comedy" />
+
+
+<label asp-for ="Year"> </label>
+<input minValue = 1880 maxValue = 2021 asp-for ="Year" />
+
+<label asp-for ="Actors"> </label>
+<input asp-for ="Actors" />
+
+<label asp-for ="Directors"> </label>
+<input asp-for ="Directors" />
+
+<button type = "submit">Submit</button>
+</form>
